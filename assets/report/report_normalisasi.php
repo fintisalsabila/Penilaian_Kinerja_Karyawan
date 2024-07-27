@@ -9,15 +9,15 @@
 	$tgl2 = strftime("%d %B %Y");
 
 	$normali = mysqli_query($koneksi_db, "SELECT Nama_Kriteria FROM data_kriteria");
-  $siswa = mysqli_query($koneksi_db, "SELECT ID_Alter, NISN, Nama_Siswa FROM data_alternatif");
+  $siswa = mysqli_query($koneksi_db, "SELECT ID_Alter, NIP, Nama_Karyawan FROM data_alternatif");
 
 	$mpdf = new \Mpdf\Mpdf();
 	$mpdf->debug = false;
 
 	$header = '<div class="head" style="border-bottom: 5px double black; font-family: sans-serif;">	
-							<img src="../img/Icon_UMJ.png" width="100" height="100" style="float: left; margin-right: 15px;">
+							<img src="../img/Icon_DKB.png" width="100" height="100" style="float: left; margin-right: 15px;">
 							<h3 style="float: right; padding-top: 15px;">Laporan Hasil Normalisasi<br>SPK Penilaian Kinerja Karyawan<br>
-							Kepaniteraan Mahkamah Agung RI</h3>
+							Universitas Muhammadiyah Jakarta</h3>
 						</div>'; 
 
 	$subhead = '<div style="font-family: sans-serif;">
@@ -42,8 +42,8 @@
                   $no++;
 	      $tabel .= '<tr>
 	                    <td>'. $no .'</td>
-	                    <td>'. $sis['NISN'] .'</td>
-	                    <td>'. $sis['Nama_Siswa'] .'</td>';
+	                    <td>'. $sis['NIP'] .'</td>
+	                    <td>'. $sis['Nama_Karyawan'] .'</td>';
                       $hasil = mysqli_query($koneksi_db, "SELECT Hasil_Norm FROM hasil_normalisasi 
                       WHERE ID_Alter = '$sis[ID_Alter]'");
 	                    

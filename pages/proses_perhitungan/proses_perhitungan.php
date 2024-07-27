@@ -36,7 +36,7 @@
       			while ($res2 = mysqli_fetch_assoc($datSiswa)) :
       		?>
             <tr>
-              <td class="text-nowrap"><?= $res2['Nama_Siswa']; ?></td>
+              <td class="text-nowrap"><?= $res2['Nama_Karyawan']; ?></td>
               <?php
               	$nilaiSis = "SELECT Nilai FROM data_penilaian WHERE ID_Alter = '$res2[ID_Alter]'";
 								$hasilSis = mysqli_query($koneksi_db, $nilaiSis);

@@ -35,9 +35,9 @@
 
 			// menangkap data penilaian dari masing" kriteria berdasarkan nama alternatif
 			$queryNilai = mysqli_query($koneksi_db, "SELECT data_penilaian.ID_Penilaian, data_penilaian.ID_Alter, data_alternatif.
-			Nama_Siswa, data_penilaian.ID_Kriteria, data_kriteria.Atribut, data_kriteria.Nama_Kriteria, data_penilaian.Nilai 
+			Nama_Karyawan, data_penilaian.ID_Kriteria, data_kriteria.Atribut, data_kriteria.Nama_Kriteria, data_penilaian.Nilai 
 			FROM data_penilaian INNER JOIN data_kriteria ON data_penilaian.ID_Kriteria = data_kriteria.ID_Kriteria INNER JOIN 
-			data_alternatif ON data_penilaian.ID_Alter = data_alternatif.ID_Alter WHERE Nama_Siswa = '$nama[Nama_Siswa]'");
+			data_alternatif ON data_penilaian.ID_Alter = data_alternatif.ID_Alter WHERE Nama_Karyawan = '$nama[Nama_Karyawan]'");
 			
 			// perulangan data penilaian awal
 			$column = [];
@@ -105,9 +105,9 @@
 
 			// menangkap data penilaian dari masing" kriteria berdasarkan nama alternatif
 			$queryNilai = mysqli_query($koneksi_db, "SELECT data_penilaian.ID_Penilaian, data_penilaian.ID_Alter, data_alternatif.
-			Nama_Siswa, data_penilaian.ID_Kriteria, data_kriteria.Atribut, data_kriteria.Nama_Kriteria, data_penilaian.Nilai FROM 
+			Nama_Karyawan, data_penilaian.ID_Kriteria, data_kriteria.Atribut, data_kriteria.Nama_Kriteria, data_penilaian.Nilai FROM 
 			data_penilaian INNER JOIN data_kriteria ON data_penilaian.ID_Kriteria = data_kriteria.ID_Kriteria INNER JOIN
-			data_alternatif ON data_penilaian.ID_Alter = data_alternatif.ID_Alter WHERE Nama_Siswa = '$nama[Nama_Siswa]'");
+			data_alternatif ON data_penilaian.ID_Alter = data_alternatif.ID_Alter WHERE Nama_Karyawan = '$nama[Nama_Karyawan]'");
 			
 			// perulangan data penilaian awal
 			$column = [];

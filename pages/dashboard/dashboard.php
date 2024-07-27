@@ -1,6 +1,6 @@
 <?php  
     $queryKrit = mysqli_query($koneksi_db, "SELECT COUNT(Nama_Kriteria) FROM data_kriteria");
-    $queryAlt= mysqli_query($koneksi_db, "SELECT COUNT(Nama_Siswa) FROM data_alternatif");
+    $queryAlt= mysqli_query($koneksi_db, "SELECT COUNT(Nama_Karyawan) FROM data_alternatif");
     $querySub = mysqli_query($koneksi_db, "SELECT COUNT(Nama_Subkriteria) FROM data_subkriteria");
 
     $resKrit = mysqli_fetch_row($queryKrit);

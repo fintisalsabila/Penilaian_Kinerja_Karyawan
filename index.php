@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="adjimuhamadzidan">
-    <link rel="icon" type="image/x-icon" href="assets/img/Icon_UMJ.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/Icon_DKB.png">
 
     <title>SPK Penilaian Kinerja Karyawan - Dashboard</title>
 
@@ -39,17 +39,17 @@
         }
 
         .sidebar {
-            background-color: #01a3a4;
+            background-color: #0087cefa;
         }
 
         .pagination .active .page-link {
-            background-color: #01a3a4;
-            border-color: #01a3a4;
+            background-color: #0087cefa;
+            border-color: #0087cefa;
         }
 
         .btn-success {
-            background-color: #01a3a4;
-            border-color: #01a3a4;
+            background-color: #0087cefa;
+            border-color: #0087cefa;
         }
 
         .btn-success:hover {
@@ -74,7 +74,7 @@
                 <div class="sidebar-brand-icon p-3">
                     <!-- <i class="fas fa-laugh-wink"></i> -->
                     <!-- <h1 class="h2 font-weight-bold my-auto">SPK</h1> -->
-                    <img src="assets/img/Icon_UMJ.png" alt="" class="img-profile w-100">
+                    <img src="assets/img/Icon_DKB.png" alt="" class="img-profile w-100">
                 </div>
                 <div class="sidebar-brand-text mx-2 text-left font-weight-bold">Penilaian Kinerja</div>
             </a>
@@ -125,7 +125,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>SPK Penilaian Kinerja Karyawan Mahkamah Agung RI <?php echo date('Y') ?></span>
+                        <span>SPK Penilaian Kinerja Karyawan PT Dok & Perkapalan Kodja Bahari <?php echo date('Y') ?></span>
                     </div>
                 </div>
             </footer>

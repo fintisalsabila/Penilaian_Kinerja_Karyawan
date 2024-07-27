@@ -1,5 +1,5 @@
 <?php
-	$pref = mysqli_query($koneksi_db, "SELECT hasil_preferensi.ID_Pref, hasil_preferensi.ID_Alter, data_alternatif.Nama_Siswa, 
+	$pref = mysqli_query($koneksi_db, "SELECT hasil_preferensi.ID_Pref, hasil_preferensi.ID_Alter, data_alternatif.Nama_Karyawan, 
 	hasil_preferensi.hasil_pref FROM hasil_preferensi INNER JOIN data_alternatif ON 
 	hasil_preferensi.ID_Alter = data_alternatif.ID_Alter ORDER BY hasil_pref DESC");
 ?>
@@ -24,7 +24,7 @@
     			$no++;	
     		?>
           <tr>
-            <td class="text-nowrap"><?= $res['Nama_Siswa']; ?></td>
+            <td class="text-nowrap"><?= $res['Nama_Karyawan']; ?></td>
             <td class="text-nowrap"><?= $res['hasil_pref']; ?></td>
             <td class="text-nowrap"><?= $no; ?></td>  
           </tr>

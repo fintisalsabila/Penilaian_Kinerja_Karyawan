@@ -96,21 +96,21 @@
     </div>
 </li>
 
-<li class="nav-item <?= $activ5 ?>">
+<!-- <li class="nav-item <?= $activ5 ?>">
     <a class="nav-link collapsed" href="index.php?page=hasil_perhitungan"
         aria-expanded="true" aria-controls="collapsePages">
         <i class="fas fa-fw fa-table"></i>
         <span>Keterlibatan Project</span>
     </a>
-</li>
-
+</li> -->
+<!-- 
 <li class="nav-item <?= $activ5 ?>">
     <a class="nav-link collapsed" href="index.php?page=hasil_perhitungan"
         aria-expanded="true" aria-controls="collapsePages">
         <i class="fas fa-fw fa-table"></i>
         <span>Ubah Password</span>
     </a>
-</li>
+</li> -->
 
 <!-- Nav Item - Utilities Collapse Menu -->
 <li class="nav-item <?= $activ3 ?>">

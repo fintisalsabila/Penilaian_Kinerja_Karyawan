@@ -62,10 +62,10 @@
       		?>
             <tr>
               <td class="text-nowrap"><?= 'A'. $kode = str_pad($no, 2, '0', STR_PAD_LEFT); ?></td>
-              <td class="text-nowrap"><?= $alter['NISN']; ?></td>
-              <td class="text-nowrap"><?= $alter['Nama_Siswa']; ?></td>
+              <td class="text-nowrap"><?= $alter['NIP']; ?></td>
+              <td class="text-nowrap"><?= $alter['Nama_Karyawan']; ?></td>
               <td class="text-nowrap"><?= $alter['JK']; ?></td>
-              <td class="text-nowrap"><?= $alter['Kelas']; ?></td>
+              <td class="text-nowrap"><?= $alter['Stasiun_Kerja']; ?></td>
               <td class="text-center text-nowrap">
               	<a href="index.php?page=edit_alter&edit=<?= $alter['ID_Alter']; ?>" title="Edit Alternatif" class="btn btn-success btn-square rounded-0">
                     <i class="fas fa-edit"></i>

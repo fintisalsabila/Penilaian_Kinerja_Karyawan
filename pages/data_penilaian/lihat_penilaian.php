@@ -5,10 +5,10 @@
   if (isset($_POST['nama_siswa'])) {
   	$siswa = $_POST['nama_siswa'];
 
-  	$namaKriteria = "SELECT data_penilaian.ID_Penilaian, data_alternatif.ID_Alter, data_alternatif.Nama_Siswa, data_penilaian.
+  	$namaKriteria = "SELECT data_penilaian.ID_Penilaian, data_alternatif.ID_Alter, data_alternatif.Nama_Karyawan, data_penilaian.
   	ID_Kriteria, data_kriteria.Nama_Kriteria, data_penilaian.Nilai FROM data_penilaian INNER JOIN data_alternatif ON 
   	data_penilaian. ID_Alter = data_alternatif.ID_Alter INNER JOIN data_kriteria ON data_penilaian.ID_Kriteria = data_kriteria.
-  	ID_Kriteria WHERE Nama_Siswa = '$siswa'";
+  	ID_Kriteria WHERE Nama_Karyawan = '$siswa'";
 
 	  $rendKriteria = mysqli_query($koneksi_db, $namaKriteria);
 

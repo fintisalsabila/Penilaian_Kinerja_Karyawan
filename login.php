@@ -1,12 +1,13 @@
-<?php
+<!-- <?php
     session_start();  
 
     // // cegah masuk ke dashboard (index)
     if (isset($_SESSION['login'])) {
-        header('Location: index.php');
+        // header('Location: index.php');
+        header('Location: pages/dashboard/dashboard.php');
         exit;
     }
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="adjimuhamadzidan">
-    <link rel="icon" type="image/x-icon" href="assets/img/Icon_UMJ.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/Icon_DKB.png">
 
     <title>SPK Penilaian Kinerja Karyawan - Login</title>
 
@@ -30,14 +31,23 @@
     <!-- Custom styles for this template-->
     <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
     <style type="text/css">
         * {
             font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
         }
 
-        .bg-login-image {
-            background-image: url(assets/img/bg-login.jpg);
-        }
+        .bg-login2-image {
+  background-image: url(assets/img/bg-login2.jpg);
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 
         .logo {
             width: 5rem;
@@ -59,14 +69,17 @@
         }
         
         .btn-success {
-            background-color: #01a3a4;
-            border-color: #01a3a4;
+            background-color: #0087cefa;
+            border-color: #0087cefa;
         }
 
         .btn-success:hover {
             background-color: #019394;
             border-color: #019394;
         }
+
+        
+
 
     </style>
 
@@ -79,31 +92,31 @@
         <!-- Outer Row -->
         <div class="row justify-content-center">
 
+        <div class="col-8 d-flex align-items-center p-0">
+  <h5 class="text-uppercase" style="font-family: Poppins; font-size: 36px; color: black;"><span>Sistem Penunjang Keputusan</span><br>Penilaian Kinerja Karyawan</h5>
+</div>
             <div class="col-xl-10 col-lg-12 col-md-9">
 
                 <div class="card o-hidden border-0 shadow rounded-0">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-flex bg-login-image align-items-center justify-content-center">
+                            <div class="col-lg-6 d-none d-lg-flex bg-login2-image align-items-center justify-content-center">
                                 <div class="row justify-content-center">
                                     <div class="col-3 d-flex justify-content-center align-items-center p-0">
-                                      <img src="assets/img/Icon_UMJ.png" alt="Icon_UMJ" title="Icon_UMJ" class="logo">  
+                                      <!-- <img src="assets/img/Icon_DKB.png" alt="Icon_DKB" title="Icon_DKB" class="logo">   -->
                                     </div>
-                                    <div class="col-8 d-flex align-items-center p-0">
-                                    <h5 class="text-uppercase" style="color: black;"><span>Sistem Penunjang Keputusan</span><br>Penilaian Kinerja Karyawan</h5>
-
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="p-4 p-sm-5 p-md-5 p-lg-5 p-xl-5">
                                     <div class="text-center">
-                                        <img src="assets/img/Icon_UMJ.png" alt="Icon_UMJ" title="Icon_UMJ" class="logo d-lg-none mb-2">
-                                        <h5 class="text-gray-800 text-uppercase mb-4 d-lg-none"><span>Sistem Penunjang Keputusan</span><br>Penilaian Kinerja Karyawan</h5>
+                                        <img src="assets/img/Icon_DKB.png" alt="Icon_DKB" title="Icon_DKB" class="logo d-lg-none mb-2">
+                                        <!-- <h5 class="text-gray-800 text-uppercase mb-4 d-lg-none"><span>Sistem Penunjang Keputusan</span><br>Penilaian Kinerja Karyawan</h5> -->
                                         <p class="h6 text-gray-800 mb-4 d-lg-none">Login</p>
                                         <p class="h5 text-gray-800 mb-4 d-lg-block d-none">Login</p>
-                                        <!-- <img src="assets/img/Icon_UMJ.png" alt="" class="img-profile w-25"> -->
+                                        <!-- <img src="assets/img/Icon_DKB.png" alt="" class="img-profile w-25"> -->
                                     </div>
 
                                     <?php 

@@ -1,6 +1,6 @@
 <?php  
-	$pref = mysqli_query($koneksi_db, "SELECT hasil_preferensi.ID_Pref, hasil_preferensi.ID_Alter, data_alternatif.NISN,
-	data_alternatif.Nama_Siswa, data_alternatif.Kelas, hasil_preferensi.hasil_pref FROM hasil_preferensi INNER JOIN 
+	$pref = mysqli_query($koneksi_db, "SELECT hasil_preferensi.ID_Pref, hasil_preferensi.ID_Alter, data_alternatif.NIP,
+	data_alternatif.Nama_Karyawan, data_alternatif.Stasiun_Kerja, hasil_preferensi.hasil_pref FROM hasil_preferensi INNER JOIN 
 	data_alternatif ON hasil_preferensi.ID_Alter = data_alternatif.ID_Alter ORDER BY hasil_pref DESC");
 ?>
 
@@ -20,9 +20,9 @@
         <thead>
           <tr>
           	<th class="text-nowrap">No</th>
-        		<th class="text-nowrap">NISN</th>
+        		<th class="text-nowrap">NIP</th>
             <th class="text-nowrap">Nama Karyawan</th>
-            <th class="text-nowrap">Kelas</th>
+            <th class="text-nowrap">Stasiun Kerja</th>
             <th class="text-nowrap">Nilai Akhir</th>
             <th class="text-nowrap">Peringkat</th>
           </tr>
@@ -35,9 +35,9 @@
       		?>
             <tr>
             	<td class="text-nowrap"><?= $no; ?></td>
-          		<td class="text-nowrap"><?= $res['NISN']; ?></td>
-              <td class="text-nowrap"><?= $res['Nama_Siswa']; ?></td>
-              <td class="text-nowrap"><?= $res['Kelas']; ?></td>
+          		<td class="text-nowrap"><?= $res['NIP']; ?></td>
+              <td class="text-nowrap"><?= $res['Nama_Karyawan']; ?></td>
+              <td class="text-nowrap"><?= $res['Stasiun_Kerja']; ?></td>
               <td class="text-nowrap"><?= $res['hasil_pref']; ?></td>
               <td class="text-nowrap"><?= $no; ?></td>  
             </tr>

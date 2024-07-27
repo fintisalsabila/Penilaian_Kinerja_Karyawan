@@ -45,7 +45,7 @@
       		?>
             <tr>
               <td class="text-nowrap"><?= 'A'. $kode = str_pad($no, 2, '0', STR_PAD_LEFT); ?></td>
-              <td class="text-nowrap"><?= $alter['Nama_Siswa']; ?></td>
+              <td class="text-nowrap"><?= $alter['Nama_Karyawan']; ?></td>
               <td class="text-center text-nowrap">
 
               	<?php  
@@ -65,10 +65,10 @@
                 
               </td>
               <td class="text-center text-nowrap">
-              	<button type="button" data-siswa="<?= $alter['Nama_Siswa']; ?>" class="cek btn btn-success btn-square rounded-0" title="Lihat Penilaian">
+              	<button type="button" data-siswa="<?= $alter['Nama_Karyawan']; ?>" class="cek btn btn-success btn-square rounded-0" title="Lihat Penilaian">
                 	<i class="fas fa-eye"></i>
                 </button>
-              	<a href="index.php?page=edit_penilaian&edit=<?= $alter['Nama_Siswa']; ?>&id=<?= $alter['ID_Alter']; ?>" class="btn btn-success btn-square rounded-0" title="Edit Penilaian">
+              	<a href="index.php?page=edit_penilaian&edit=<?= $alter['Nama_Karyawan']; ?>&id=<?= $alter['ID_Alter']; ?>" class="btn btn-success btn-square rounded-0" title="Edit Penilaian">
                   <i class="fas fa-edit"></i>
                 </a>
               </td>

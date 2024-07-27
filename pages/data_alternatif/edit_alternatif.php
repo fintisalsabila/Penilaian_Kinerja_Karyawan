@@ -20,12 +20,12 @@
         <form action="pages/data_alternatif/proses_edit_alternatif.php?id=<?= $_GET['edit']; ?>" method="post">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">NIP</label>
-                <input type="text" class="form-control rounded-0" id="exampleFormControlInput1" name="nisn" value="<?= $data['NISN']; ?>" required>
+                <input type="text" class="form-control rounded-0" id="exampleFormControlInput1" name="nisn" value="<?= $data['NIP']; ?>" required>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nama Karyawan</label>
                 <input type="text" class="form-control rounded-0" id="exampleFormControlInput1" name="nama_siswa" 
-                value="<?= $data['Nama_Siswa']; ?>" required>
+                value="<?= $data['Nama_Karyawan']; ?>" required>
             </div>
             <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">JK</label>
@@ -38,7 +38,7 @@
             <div class="mb-4">
                 <label for="exampleFormControlInput1" class="form-label">Stasiun Kerja</label>
                 <select class="form-control rounded-0" aria-label="Default select example" name="kelas" required>
-                    <option selected value="<?= $data['Kelas']; ?>" class="bg-secondary text-white"><?= $data['Kelas']; ?></option>
+                    <option selected value="<?= $data['Stasiun_Kerja']; ?>" class="bg-secondary text-white"><?= $data['Stasiun_Kerja']; ?></option>
                     <option value="Bengkel Mekanik">Bengkel Mekanik</option>
                     <option value="Bengkel Pipa">Bengkel Pipa</option>
                     <option value="Bengkel Konstruksi">Bengkel Konstruksi</option>

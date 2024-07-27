@@ -1,6 +1,6 @@
 <?php  
     $normali = mysqli_query($koneksi_db, "SELECT Nama_Kriteria FROM data_kriteria");
-    $siswa = mysqli_query($koneksi_db, "SELECT ID_Alter, Nama_Siswa FROM data_alternatif");
+    $siswa = mysqli_query($koneksi_db, "SELECT ID_Alter, Nama_Karyawan FROM data_alternatif");
 ?>
 
 <div class="card-header bg-white py-3 d-flex align-items-center justify-content-between">
@@ -28,7 +28,7 @@
                 ?>
                 <tr>
                     <td class="text-nowrap"><?= $no; ?></td>
-                    <td class="text-nowrap"><?= $sis['Nama_Siswa']; ?></td>
+                    <td class="text-nowrap"><?= $sis['Nama_Karyawan']; ?></td>
                     <?php  
                         $hasil = mysqli_query($koneksi_db, "SELECT Hasil_Norm FROM hasil_normalisasi 
                         WHERE ID_Alter = '$sis[ID_Alter]'");

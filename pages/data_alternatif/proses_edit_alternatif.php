@@ -9,7 +9,7 @@
   $jk = htmlspecialchars($_POST['jenis_kelamin']);
   $kelas = htmlspecialchars($_POST['kelas']);
 
-  $sql = "UPDATE data_alternatif SET NISN = '$nisn', Nama_Siswa = '$siswa', JK = '$jk', Kelas = '$kelas'
+  $sql = "UPDATE data_alternatif SET NIP = '$nisn', Nama_Karyawan = '$siswa', JK = '$jk', Stasiun_Kerja = '$kelas'
   WHERE ID_Alter = '$id'";
   $send = mysqli_query($koneksi_db, $sql);
 

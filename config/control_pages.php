@@ -70,6 +70,11 @@
 			include 'pages/informasi_lain/tentang_spk.php';
 		}
 
+		// halaman tentang spk
+		else if ($pages === 'tentang_dkb') {
+			include 'pages/informasi_lain2/tentang_dkb.php';
+		}
+
 		// halaman cara penggunaan
 		else if ($pages === 'penggunaan') {
 			include 'pages/informasi_lain/cara_penggunaan.php';
@@ -88,7 +93,7 @@
 		}
 
 	} else {
-		include 'pages/dashboard2/dashboard2.php';
+		include 'pages/dashboard/dashboard.php';
 	}
 	
 ?>

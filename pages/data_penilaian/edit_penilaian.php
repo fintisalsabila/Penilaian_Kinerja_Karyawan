@@ -1,9 +1,9 @@
 <?php
     $idAlt = $_GET['edit'];
-    $datPenilai = "SELECT data_penilaian.ID_Penilaian, data_penilaian.ID_Alter, data_alternatif.Nama_Siswa, 
+    $datPenilai = "SELECT data_penilaian.ID_Penilaian, data_penilaian.ID_Alter, data_alternatif.Nama_Karyawan, 
     data_penilaian.ID_Kriteria, data_kriteria.Nama_Kriteria, data_penilaian.Nilai FROM data_penilaian INNER JOIN 
     data_alternatif ON data_penilaian.ID_Alter = data_alternatif.ID_Alter INNER JOIN data_kriteria ON 
-    data_penilaian.ID_Kriteria = data_kriteria.ID_Kriteria WHERE Nama_Siswa = '$idAlt'";
+    data_penilaian.ID_Kriteria = data_kriteria.ID_Kriteria WHERE Nama_Karyawan = '$idAlt'";
     $quePen = mysqli_query($koneksi_db, $datPenilai);
 
     // menangkap data alternatif sesuai nama Karyawan
@@ -65,7 +65,7 @@
 <!-- DataTales Example -->
 <div class="card mb-4 rounded-0">
     <div class="card-header bg-white py-3 d-flex">
-        <h6 class="m-0 text-gray-800">Edit Penilaian : <?= $res['Nama_Siswa']; ?></h6>
+        <h6 class="m-0 text-gray-800">Edit Penilaian : <?= $res['Nama_Karyawan']; ?></h6>
     </div>
     <div class="card-body">
         <form action="" method="post">

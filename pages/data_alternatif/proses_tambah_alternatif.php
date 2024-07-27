@@ -8,7 +8,7 @@
   $jk = htmlspecialchars($_POST['jenis_kelamin']);
   $kelas = htmlspecialchars($_POST['kelas']);
 
-  $query = mysqli_query($koneksi_db, "SELECT NISN FROM data_alternatif WHERE NISN = '$nisn'");
+  $query = mysqli_query($koneksi_db, "SELECT NIP FROM data_alternatif WHERE NIP = '$nisn'");
   $nisnSiswa = mysqli_num_rows($query);
 
   // validasi input alternatif sudah ada atau belum

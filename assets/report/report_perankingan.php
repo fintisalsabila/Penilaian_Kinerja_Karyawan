@@ -8,17 +8,17 @@
 	$tgl1 = strftime("%A, %d %B %Y");
 	$tgl2 = strftime("%d %B %Y");
 
-	$pref = mysqli_query($koneksi_db, "SELECT hasil_preferensi.ID_Pref, hasil_preferensi.ID_Alter, data_alternatif.NISN,
-	data_alternatif.Nama_Siswa, data_alternatif.Kelas, hasil_preferensi.hasil_pref FROM hasil_preferensi INNER JOIN 
+	$pref = mysqli_query($koneksi_db, "SELECT hasil_preferensi.ID_Pref, hasil_preferensi.ID_Alter, data_alternatif.NIP,
+	data_alternatif.Nama_Karyawan, data_alternatif.Stasiun_Kerja, hasil_preferensi.hasil_pref FROM hasil_preferensi INNER JOIN 
 	data_alternatif ON hasil_preferensi.ID_Alter = data_alternatif.ID_Alter ORDER BY hasil_pref DESC");
 
 	$mpdf = new \Mpdf\Mpdf();
 	$mpdf->debug = false;
 
 	$header = '<div class="head" style="border-bottom: 5px double black; font-family: sans-serif; text-align: center;">	
-							<img src="../img/Icon_UMJ.png" alt="" width="100" height="100" style="float: left; margin-right: 15px;">
+							<img src="../img/Icon_DKB.png" alt="" width="100" height="100" style="float: left; margin-right: 15px;">
 							<h2 style="float: right; padding-top: 15px;">Laporan Hasil Normalisasi<br>SPK Penilaian Kinerja Karyawan<br>
-							Kepaniteraan Mahkamah Agung RI</h2>
+							Universitas Muhammadiyah Jakarta</h2>
 						</div>'; 
 
 	$subhead = '<div style="font-family: sans-serif;">
@@ -43,9 +43,9 @@
             			$no++;	
          	$tabel .= '<tr>
          							<td>'. $no .'</td>
-                  		<td>'. $res['NISN'] .'</td>
-                      <td>'. $res['Nama_Siswa'] .'</td>
-                      <td>'. $res['Kelas'] .'</td>
+                  		<td>'. $res['NIP'] .'</td>
+                      <td>'. $res['Nama_Karyawan'] .'</td>
+                      <td>'. $res['Stasiun_Kerja'] .'</td>
                       <td>'. $res['hasil_pref'] .'</td>
                       <td>'. $no .'</td>  
 	                  </tr>';
