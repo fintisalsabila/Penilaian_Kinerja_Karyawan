@@ -34,8 +34,6 @@ Proyek ini merupakan implementasi dari algoritma Simple Additive Weighting (SAW)
 * **Penjelasan Singkat:** Jelaskan secara singkat bagaimana algoritma SAW bekerja dan bagaimana implementasinya dalam proyek ini.
 * **Diagram Alir:** Sertakan diagram alir yang menggambarkan langkah-langkah perhitungan SAW.
 
-**Kontribusi**
-* [Nama]: Pengembang utama, bertanggung jawab atas [sebutkan kontribusi Anda].
 
 **Lisensi**
 Proyek ini dilisensikan di bawah MIT License.
